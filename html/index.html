@@ -22,11 +22,21 @@
     <div class="ui two column grid">
         <div class="column">
             <div class="ui segment">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac ligula in velit eleifend condimentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus mauris tellus, aliquam id nisl nec, laoreet aliquam ante. Pellentesque commodo nibh ex, quis vestibulum felis venenatis sed. Quisque pharetra bibendum nulla, ac tincidunt turpis hendrerit ut. Proin gravida orci tellus, in venenatis dui tempor ut. Nam ut iaculis est. Praesent ligula dui, ultrices in ligula at, fermentum imperdiet eros. Ut dictum ipsum porttitor, viverra odio at, porta turpis. Sed velit augue, ultricies congue efficitur congue, dictum id arcu. In hac habitasse platea dictumst. Vivamus finibus posuere orci. Aenean malesuada nec erat eget condimentum. Aenean dui nisl, varius at accumsan vel, hendrerit et est. Pellentesque sed sapien luctus, venenatis magna sed, molestie magna. Aliquam erat volutpat</p>
+                <p id="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac ligula in velit eleifend
+                    condimentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                    himenaeos. Vivamus mauris tellus, aliquam id nisl nec, laoreet aliquam ante. Pellentesque commodo
+                    nibh ex, quis vestibulum felis venenatis sed. Quisque pharetra bibendum nulla, ac tincidunt turpis
+                    hendrerit ut. Proin gravida orci tellus, in venenatis dui tempor ut. Nam ut iaculis est. Praesent
+                    ligula dui, ultrices in ligula at, fermentum imperdiet eros. Ut dictum ipsum porttitor, viverra odio
+                    at, porta turpis. Sed velit augue, ultricies congue efficitur congue, dictum id arcu. In hac
+                    habitasse platea dictumst. Vivamus finibus posuere orci. Aenean malesuada nec erat eget condimentum.
+                    Aenean dui nisl, varius at accumsan vel, hendrerit et est. Pellentesque sed sapien luctus, venenatis
+                    magna sed, molestie magna. Aliquam erat volutpat</p>
             </div>
         </div>
         <div class="column">
-            <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=45.178201%2C%20-68.921467&key=AIzaSyDS5gUNpePFAg-BJkcEIaSWw24HFOzrcOA"></iframe>
+            <iframe id="map" width="600" height="450" frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?q=Cook%20Island%2C%20Southeast%20Piscataquis%2C%20Maine%2C%20United%20States&key=AIzaSyDS5gUNpePFAg-BJkcEIaSWw24HFOzrcOA"></iframe>
         </div>
         <div class="three column row">
             <div class="column">
@@ -41,6 +51,49 @@
                     <p class="label">Weather</p>
                 </div>
                 <div class="ui bottom attached segment">
+                    <div class="ui divided list">
+                        <div class="item">
+                            <i class="sun icon"></i>
+
+                            <div class="content">
+                                <p class="header">Temperature</p>
+
+                                <div class="description">
+                                    <p class="weatherDisc">Max Temperature: 94 °F&nbsp; |&nbsp; Average Temperature: 43 °F&nbsp;
+                                        |&nbsp; Minimum Temperature: -18 °F</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="theme icon"></i>
+
+                            <div class="content">
+                                <p class="header">Precipitation</p>
+
+                                <div class="description">
+                                    <p class="weatherDisc">Max Precipitation: 1.74 in&nbsp; |&nbsp; Average Precipitation: 0.12 in&nbsp;
+                                        |&nbsp; Minimum Precipitation: 0.00 in</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="cloud icon"></i>
+
+                            <div class="content">
+                                <p class="header">Wind</p>
+
+                                <div class="description">
+                                    <p class="weatherDisc">Max Wind: 31 mph&nbsp; |&nbsp; Average Wind: 5 mph&nbsp;
+                                        |&nbsp; Minimum Wind: 5 mph</p>
+                                    <p class="weatherDisc">Max Gust Wind: 47 mph&nbsp; |&nbsp; Average Gust Wind: 47 mph&nbsp;
+                                        |&nbsp; Minimum Gust Wind: 16 mph</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="column">
