@@ -11,8 +11,27 @@ article{
     font-weight: bold;
 }
 
+.suppliesDesc {
+    margin-bottom: 5px;
+}
+
+.suppliesPrice, .suppliesTotalPrice {
+    margin-top: 10px !important;
+}
+
+#weather {
+    font-size: 20px;
+}
+
 .weatherDisc{
-    font-size: 12px;
+    margin: 0 10px;
+    font-size: 15px !important;
+}
+
+#wind {
+    border-top: 1px solid #A9A9A9;
+    margin-top: 5px;
+    padding-top: 5px;
 }
 
 /*div.profile-photo.profile-photo-light{*/
