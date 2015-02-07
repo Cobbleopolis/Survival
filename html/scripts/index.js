@@ -40,6 +40,13 @@ var supplies = [
         desc: "This lightweight axe has a long handle that can be use 1- or 2-handed, making it great for limbing, cutting smaller trees and chopping firewood at home or around your campsite.",
         link: "http://www.rei.com/product/883917/wetterlings-backcountry-axe",
         linkName: "REI"
+    },
+    {
+        name: "Best Glide Survival Gill Net",
+        price: 24.99,
+        desc: "Best Glide Survival Gill Net is a 12’ x 4’ Emergency Gill Net. Used by stretching it across a stream or pond to catch fish or bait, it is not to be used for recreational fishing. The Best Glide Emergency Gill Net is constructed to be effective and versatile! The leaded foot (bottom) rope of the gill net acts as the weight to sink the net and the top rope is made of polypropylene that floats. It includes a mesh storage bag.",
+        link: "http://www.onlinesports.com/best-glide-survival-gill-net.html?srcid=frgl&utm_source=froogle&utm_medium=cpc&utm_term=ASE-FG1151&cm_mmc=Froogle-_-Products-_-PPC-_-ASE-FG1151&gclid=Cj0KEQiA6dGmBRC_3Mi-x_XywKsBEiQA1lcFP1LQ5gyhz7FFkzWBa46Qv1XuFIwlnqYgqXRSoGdrKBQaAswZ8P8HAQ",
+        linkName: "OnlineSports"
     }
 ];
 
