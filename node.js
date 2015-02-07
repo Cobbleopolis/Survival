@@ -4,6 +4,7 @@ var app = express();
 var pageCreate = require('./pageCreate.js');
 
 app.get('/', function(req, res){
+    console("Request");
     pageCreate.indexHandle(__dirname + "/html/index.html", res);
 });
 
