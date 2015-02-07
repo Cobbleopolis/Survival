@@ -4,7 +4,7 @@ var app = express();
 var pageCreate = require('./pageCreate.js');
 
 app.get('/', function(req, res){
-    console("Request");
+    console.log("Request");
     pageCreate.indexHandle(__dirname + "/html/index.html", res);
 });
 
@@ -19,9 +19,10 @@ app.use(express.static(__dirname + '/html'));
 
 var server = app.listen(80, function () {
 
-    var host = server.address().address;
+    //var host = server.address().address;
     var port = server.address().port;
 
-    console.log('App listening at http://%s:%s', host, port);
+    //console.log('App listening at http://%s:%s', host, port);
+    console.log('App listening on port %s', port);
 
 });

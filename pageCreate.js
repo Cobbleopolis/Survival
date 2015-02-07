@@ -3,13 +3,13 @@
     var cheerio = require('cheerio');
 
     module.exports.indexHandle = function (url, res) {
-        console("Handle");
+        console.log("Handle");
         fs.readFile(url, function (err, file) {
             if (err)
                 throw err;
-            console("File");
+            console.log("File");
             var $ = cheerio.load(file);
-            console("Load");
+            console.log("Load");
             res.send($.html());
         });
     };
