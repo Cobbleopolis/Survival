@@ -19,6 +19,27 @@ var supplies = [
         desc: "See site for details.",
         link: "http://www.amazon.com/KOR-650ml-Filter-Water-Bottle/dp/B00FUANGRY/ref=sr_1_1?ie=UTF8&qid=1423276341&sr=8-1&keywords=KOR+Nava+BPA+Free+650ml+Filter+Water+Bottle%2C+White%2FBlue",
         linkName: "Amazon"
+    },
+    {
+        name: "USGI Trip / Snare Wire 160' Vietnam Era Emergency Survival",
+        price: 13.48,
+        desc: "Snare trip wire.",
+        link: "http://www.amazon.com/USGI-Snare-Vietnam-Emergency-Survival/dp/B006GWTJIU",
+        linkName: "Amazon"
+    },
+    {
+        name: "Leatherman Squirt PS4 Multitool",
+        price: 29.95,
+        desc: "The tough and functional Leatherman Squirt PS4 multi-tool combines the best of both worlds with its spring-action pliers and scissors.",
+        link: "http://www.rei.com/product/802322/leatherman-squirt-ps4-multitool",
+        linkName: "REI"
+    },
+    {
+        name: "Wetterlings Backcountry Axe",
+        price: 129.00,
+        desc: "This lightweight axe has a long handle that can be use 1- or 2-handed, making it great for limbing, cutting smaller trees and chopping firewood at home or around your campsite.",
+        link: "http://www.rei.com/product/883917/wetterlings-backcountry-axe",
+        linkName: "REI"
     }
 ];
 
