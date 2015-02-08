@@ -2,8 +2,10 @@ article {
     margin: 2% 5%;
 }
 
-h1 {
-    alignment: center;
+.title {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
 }
 
 #desc {
