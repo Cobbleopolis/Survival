@@ -2,10 +2,21 @@ article {
     margin: 2% 10%;
 }
 
+p {
+    margin-bottom: 0;
+    text-indent: 40px;
+}
+
 .title {
     text-align: center;
     font-size: 60px;
     font-weight: bold;
+}
+
+#tips {
+    list-style-type: none;
+    margin-left: 80px;
+    margin-top: 0;
 }
 
 .subTitle {
@@ -13,6 +24,10 @@ article {
     padding-top: 30px;
     margin-bottom: 0;
     border-bottom: 1px solid #A9A9A9;
+}
+
+.fullWidth{
+    width: 100%;
 }
 
 .desc {
@@ -56,8 +71,3 @@ article {
     font-size: 13px;
     margin: 0 30px;
 }
-
-
-/*div.profile-photo.profile-photo-light{*/
-    /*display: none;*/
-/*}*/
