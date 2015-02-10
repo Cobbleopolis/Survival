@@ -65,7 +65,7 @@ function createSupplies() {
         html += '<p class="suppliesDesc">Description: ' + supplies[i].desc + '</p>';
         html += '<p class="suppliesPrice">Price: $' + supplies[i].price + '</p>';
         html += '<div class="ui fitted inverted divider"></div>';
-        html += '<p class="suppliesPrice">Buy/View: <a href="' + supplies[i].link + '">' + supplies[i].linkName + '</a></p>';
+        html += '<p class="suppliesBuyView">Buy/View: <a href="' + supplies[i].link + '">' + supplies[i].linkName + '</a></p>';
         html += '</div>';
         cost += supplies[i].price;
         //console.log(cost);

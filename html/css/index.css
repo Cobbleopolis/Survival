@@ -47,7 +47,18 @@ ul {
 }
 
 .suppliesDesc {
+    font-size: 15px;
     margin-top: 15px;
+}
+
+.suppliesPrice {
+    font-size: 15px;
+}
+
+.suppliesBuyView {
+    font-size: 15px;
+    text-indent: 0;
+    margin-top: 10px;
 }
 
 .suppliesTotalPrice {
