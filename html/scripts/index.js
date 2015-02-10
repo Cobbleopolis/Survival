@@ -47,6 +47,13 @@ var supplies = [
         desc: "Best Glide Survival Gill Net is a 12’ x 4’ Emergency Gill Net. Used by stretching it across a stream or pond to catch fish or bait, it is not to be used for recreational fishing. The Best Glide Emergency Gill Net is constructed to be effective and versatile! The leaded foot (bottom) rope of the gill net acts as the weight to sink the net and the top rope is made of polypropylene that floats. It includes a mesh storage bag.",
         link: "http://www.onlinesports.com/best-glide-survival-gill-net.html?srcid=frgl&utm_source=froogle&utm_medium=cpc&utm_term=ASE-FG1151&cm_mmc=Froogle-_-Products-_-PPC-_-ASE-FG1151&gclid=Cj0KEQiA6dGmBRC_3Mi-x_XywKsBEiQA1lcFP1LQ5gyhz7FFkzWBa46Qv1XuFIwlnqYgqXRSoGdrKBQaAswZ8P8HAQ",
         linkName: "OnlineSports"
+    },
+    {
+        name: "Coleman Cast Iron Skillet, 10-Inch",
+        price: 15.42,
+        desc: "See site for details.",
+        link: "http://www.amazon.com/Coleman-Cast-Iron-Skillet-10-Inch/dp/B00AU6JL2W/ref=sr_1_7?s=outdoor-recreation&ie=UTF8&qid=1423587735&sr=1-7",
+        linkName: "Amazon"
     }
 ];
 
@@ -56,8 +63,8 @@ $(window).on("load", function () {
 });
 
 function createSupplies() {
-    html = '';
-    cost = 0;
+    var html = '';
+    var cost = 0;
     for (var i = 0; i < supplies.length; i++) {
         html += '<div class="ui segment">';
         html += '<p><strong>' + supplies[i].name + '</strong></p>';
