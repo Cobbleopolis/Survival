@@ -71,7 +71,7 @@ function createSupplies() {
         //console.log(cost);
     }
     html += '<div class="ui fitted inverted divider"></div>';
-    html += '<p class="suppliesTotalPrice">Total Price: $' + Math.round(cost * 100) / 100 + '</p>';
+    html += '<p class="suppliesTotalPrice">Total Price: $' + Math.round(cost * 100) / 100 + '0</p>';
 
     $("#suppliesContent").html(html);
 }
