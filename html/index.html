@@ -11,6 +11,7 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="css/semantic/semantic.min.js"></script>
+    <script type="text/javascript" src="scripts/nav.js"></script>
     <script type="text/javascript" src="scripts/index.js"></script>
 
     <!-- Enabling HTML5 support for Internet Explorer -->
@@ -19,205 +20,214 @@
     <![endif]-->
     <!---->
 </head>
-<body>
-<article>
-    <p class="title">Transcendent Survival</p>
+<body class="pushable">
+<div id="navBar" class="ui left demo vertical inverted labeled icon sidebar menu"></div>
+<div id="navButton" class="ui black big launch right attached fixed button" onclick="showNav()"></div>
 
-    <div class="column">
-        <div class="desc ui blue segment">
-            <p>Feeling lost? Are you in a rut? Maybe you feel like you are just another face in the crowd? Want to
-                stand out? Better yourself? Well, <a href="http://transcendentalism-legacy.tamu.edu/ideas/">Transcendentalism</a>
-                may be able to help. We provide a one-month survival retreat where you detach from society, no
-                electronics, no communication with society, live off the
-                land and better your mind. With the teachings of Transcendentalism, this journey can help guide you to
-                Self-actualization and self-reliance. It causes you to provide all the necessities of life for yourself
-                allowing you to stop relying on other people and entities. This retreat also lets you get away from
-                all the stresses of life and the materialistic world and simply allows you to be one with the world and
-                nature.</p>
-            <br>
+<div class="pusher">
+    <article>
+        <p class="title">Transcendent Survival</p>
 
-            <p>During this journey, you will break away from society. Secede from its tyrannous rule over its
-                individual, become your own person. No longer conform to their standards or rules. Become a true
-                individual. Find your own path, discover your true purpose. Realize how society is only taking away your
-                individuality and liberty.The isolation allows you to redefine yourself without influence from any person
-                or entity.</p>
-            <br>
+        <div class="column">
+            <div class="desc ui blue segment">
+                <p>Survive on a one-month survival retreat where you detach from society, no electronics, no
+                    communication with society, live off the land and better your mind. This journey can help guide you
+                    to Self-actualization and self-reliance. It causes you to provide all the necessities of life for
+                    yourself allowing you to stop relying on other people and entities. This retreat also lets you get
+                    away from all the stresses of life and the materialistic world and simply allows you to be one with
+                    the world and nature.</p>
+                <br>
 
-            <p>Helpful tips to make your journey more enjoyable is that you may want to bring a journal with you to
-                keep track of the days and document your journey. another do not always take the same path when going
-                to or from places or change the order of what you do each day, nothing will change, and, therefore, no
-                progress will be made if you do the same things over and over again. </p>
-        </div>
-    </div>
-    <p class="subTitle">Survival Information</p>
+                <!--<p>During this journey, you will break away from society. Secede from its tyrannous rule over its-->
+                <!--individual, become your own person. No longer conform to their standards or rules. Become a true-->
+                <!--individual. Find your own path, discover your true purpose. Realize how society is only taking away your-->
+                <!--individuality and liberty.The isolation allows you to redefine yourself without influence from any-->
+                <!--person-->
+                <!--or entity.</p>-->
+                <!--<br>-->
 
-    <div id="infoDiv" class="ui fitted inverted segment"></div>
-    <div class="fullWidth column">
-        <div id="survivalInfo" class="ui red segment">
-            <p class="desc">The recommended location for this type of retreat is Cook Island, Maine or some similar
-                site. A map of the island can be found below as well as some other information about the location such
-                as natural resources and average weather. Also there is a list of supplies below, this is only a
-                suggested list and items can be added or removed as needed although a hard $500 limit must be set to
-                prevent you from carrying too many materialistic items with you.</p>
-            <br>
-
-            <p>Although removing oneself from society for a large period of time is not easy it can be done. You do have
-                to plan for your eventual return to society, like communicating to your employer that do intend to
-                eventually, return to work. Also, inform your family that you will embark on this trip and will not be
-                able to be contacted during this time.</p>
-            <br>
-
-            <p class="listHead">Skills that may be useful to learn:</p>
-            <ul>
-                <li>Some form of hunting</li>
-                <li>How to properly use a gillnet (this is also know as net fishing)</li>
-                <li>How to properly purify water</li>
-                <li>First aid</li>
-            </ul>
-            <br>
-
-            <p class="listHead">Things to note:</p>
-            <ul>
-                <li>The temperatures are averages taken over the year of 2014 and are subject to change.</li>
-                <li>The information provided is only valid for Cook Island, Maine</li>
-                <li>You are responsible for bringing any extra materials you deem necessary.</li>
-                <li><b>You are responsible for providing your own transportation to the location you have chosen as well as whatever you use to cary your supplies but it must be able to contain all of your supplies.</b>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <br>
-
-    <div class="fullWidth column">
-        <iframe id="map" width="600" height="450" frameborder="0" style="border:0"
-                src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDS5gUNpePFAg-BJkcEIaSWw24HFOzrcOA&center=45.183792,-68.922622&zoom=15&maptype=satellite"></iframe>
-    </div>
-    <br>
-
-    <div class="ui column grid">
-        <div class="three column row">
-            <div class="column">
-                <div class="ui orange top attached segment">
-                    <p class="label">Weather</p>
-                </div>
-                <div id="weather" class="ui bottom attached segment">
-                    <div class="ui divided list">
-                        <div class="item">
-                            <i class="sun icon"></i>
-
-                            <div class="content">
-                                <p class="header">Temperature</p>
-
-                                <div class="description">
-                                    <p class="weatherDisc">Max Temperature: 94 °F</p>
-
-                                    <p class="weatherDisc">Average Temperature: 43 °F</p>
-
-                                    <p class="weatherDisc">Minimum Temperature: -18 °F</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="item">
-                            <i class="theme icon"></i>
-
-                            <div class="content">
-                                <p class="header">Precipitation</p>
-
-                                <div class="description">
-                                    <p class="weatherDisc">Max Precipitation: 1.74 in.</p>
-
-                                    <p class="weatherDisc">Average Precipitation: 0.12 in.</p>
-
-                                    <p class="weatherDisc">Minimum Precipitation: 0.00 in.</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="item">
-                            <i class="cloud icon"></i>
-
-                            <div class="content">
-                                <p class="header">Wind</p>
-
-                                <div class="description">
-                                    <p class="weatherDisc">Max Wind: 31 mph.</p>
-
-                                    <p class="weatherDisc">Average Wind: 5 mph.</p>
-
-                                    <p class="weatherDisc">Minimum Wind: 5 mph.</p>
-
-                                    <p id="wind" class="weatherDisc">Max Gust Wind: 47 mph.</p>
-
-                                    <p class="weatherDisc">Average Gust Wind: 47 mph.</p>
-
-                                    <p class="weatherDisc">Minimum Gust Wind: 16 mph</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <p>Helpful tips to make your journey more enjoyable is that you may want to bring a journal with you to
+                    keep track of the days and document your journey. another do not always take the same path when
+                    going to or from places or change the order of what you do each day, nothing will change, and,
+                    therefore, no progress will be made if you do the same things over and over again. </p>
             </div>
-            <div class="column">
-                <div class="ui green top attached segment">
-                    <p class="label">Natural Resources / Wildlife</p>
-                </div>
-                <div id="resources" class="ui bottom attached segment">
-                    <div class="ui divided list">
-                        <div class="item">
-                            <i class="paw icon"></i>
+        </div>
+        <p class="subTitle">Survival Information</p>
 
-                            <div class="content">
-                                <p class="header">Huntable Animals</p>
+        <div id="infoDiv" class="ui fitted inverted segment"></div>
+        <div class="fullWidth column">
+            <div id="survivalInfo" class="ui red segment">
+                <p class="desc">The recommended location for this type of retreat is Cook Island, Maine or some similar
+                    site. A map of the island can be found below as well as some other information about the location
+                    such as natural resources and average weather. Also there is a list of supplies, this is only
+                    a suggested list and items can be added or removed as needed although a hard $500 should be set
+                    to prevent the trip from becoming to costly.</p>
+                <br>
 
-                                <div class="description">
-                                    <p class="weatherDisc">Any Deer</p>
+                <p>Although removing oneself from society for a large period of time is not easy it can be done. You do
+                    have to plan for your eventual return to society, like communicating to your employer that do intend
+                    to eventually, return to work. Also, inform your family that you will embark on this trip and will
+                    not be able to be contacted during this time.</p>
+                <br>
 
-                                    <p class="weatherDisc">Moose</p>
+                <p class="listHead">Skills that may be useful to learn:</p>
+                <ul>
+                    <li>Some form of hunting</li>
+                    <li>How to properly use a gillnet (this is also know as net fishing)</li>
+                    <li>How to properly purify water</li>
+                    <li>First aid</li>
+                </ul>
+                <br>
 
-                                    <p class="weatherDisc">Wild Turkey</p>
+                <p class="listHead">Things to note:</p>
+                <ul>
+                    <li>The temperatures are averages taken over the year of 2014 and are subject to change.</li>
+                    <li>The information provided is only valid for Cook Island, Maine</li>
+                    <li>You are responsible for bringing any extra materials you deem necessary.</li>
+                    <li><b class="notice">You are responsible for providing your own transportation to the location you have chosen as well as whatever you use to cary your supplies but it must be able to contain all of your supplies.</b>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+
+        <div class="fullWidth column">
+            <iframe id="map" width="600" height="450" frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDS5gUNpePFAg-BJkcEIaSWw24HFOzrcOA&center=45.183792,-68.922622&zoom=15&maptype=satellite"></iframe>
+        </div>
+        <br>
+
+        <div class="ui column grid">
+            <div class="three column row">
+                <div class="column">
+                    <div class="ui orange top attached segment">
+                        <p class="label">Weather</p>
+                    </div>
+                    <div id="weather" class="ui bottom attached segment">
+                        <div class="ui divided list">
+                            <div class="item">
+                                <i class="sun icon"></i>
+
+                                <div class="content">
+                                    <p class="header">Temperature</p>
+
+                                    <div class="description">
+                                        <p class="weatherDisc">Max Temperature: 94 °F</p>
+
+                                        <p class="weatherDisc">Average Temperature: 43 °F</p>
+
+                                        <p class="weatherDisc">Minimum Temperature: -18 °F</p>
+                                    </div>
+
                                 </div>
-
                             </div>
-                        </div>
-                        <div class="item">
-                            <i class="tree icon"></i>
+                            <div class="item">
+                                <i class="theme icon"></i>
 
-                            <div class="content">
-                                <p class="header">Resources</p>
+                                <div class="content">
+                                    <p class="header">Precipitation</p>
 
-                                <div class="description">
-                                    <p class="resourceDisc">Lumber</p>
+                                    <div class="description">
+                                        <p class="weatherDisc">Max Precipitation: 1.74 in.</p>
 
-                                    <p class="resourceSubDisc">Usage: Create Shelter and starting fire</p>
+                                        <p class="weatherDisc">Average Precipitation: 0.12 in.</p>
 
-                                    <p class="resourceSubDisc">Location: Surrounding Forest</p>
+                                        <p class="weatherDisc">Minimum Precipitation: 0.00 in.</p>
+                                    </div>
 
-                                    <p class="resourceSubDisc">Method of obtaining: Use axe to cut down trees.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="cloud icon"></i>
 
-                                    <p class="resourceDisc">Water</p>
+                                <div class="content">
+                                    <p class="header">Wind</p>
 
-                                    <p class="resourceSubDisc">Usage: Drinking water</p>
+                                    <div class="description">
+                                        <p class="weatherDisc">Max Wind: 31 mph.</p>
 
-                                    <p class="resourceSubDisc">Location: Nearby lake and rain</p>
+                                        <p class="weatherDisc">Average Wind: 5 mph.</p>
 
-                                    <p class="resourceSubDisc">Method of obtaining: Use water bottle for collection and
-                                        filtration.</p>
+                                        <p class="weatherDisc">Minimum Wind: 5 mph.</p>
+
+                                        <p id="wind" class="weatherDisc">Max Gust Wind: 47 mph.</p>
+
+                                        <p class="weatherDisc">Average Gust Wind: 47 mph.</p>
+
+                                        <p class="weatherDisc">Minimum Gust Wind: 16 mph</p>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="column">
-                <div class="ui purple top attached segment">
-                    <p class="label">Supplies</p>
+                <div class="column">
+                    <div class="ui green top attached segment">
+                        <p class="label">Natural Resources / Wildlife</p>
+                    </div>
+                    <div id="resources" class="ui bottom attached segment">
+                        <div class="ui divided list">
+                            <div class="item">
+                                <i class="paw icon"></i>
+
+                                <div class="content">
+                                    <p class="header">Huntable Animals</p>
+
+                                    <div class="description">
+                                        <p class="weatherDisc">Any Deer</p>
+
+                                        <p class="weatherDisc">Moose</p>
+
+                                        <p class="weatherDisc">Wild Turkey</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <i class="tree icon"></i>
+
+                                <div class="content">
+                                    <p class="header">Resources</p>
+
+                                    <div class="description">
+                                        <p class="resourceDisc">Lumber</p>
+
+                                        <p class="resourceSubDisc">Usage: Create Shelter and starting fire</p>
+
+                                        <p class="resourceSubDisc">Location: Surrounding Forest</p>
+
+                                        <p class="resourceSubDisc">Method of obtaining: Use axe to cut down
+                                            trees.</p>
+
+                                        <p class="resourceDisc">Water</p>
+
+                                        <p class="resourceSubDisc">Usage: Drinking water</p>
+
+                                        <p class="resourceSubDisc">Location: Nearby lake and rain</p>
+
+                                        <p class="resourceSubDisc">Method of obtaining: Use water bottle for
+                                            collection
+                                            and
+                                            filtration.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="suppliesContent" class="ui bottom attached segment"></div>
+                <div class="column">
+                    <div class="ui purple top attached segment">
+                        <p class="label">Supplies</p>
+                    </div>
+                    <div id="suppliesContent" class="ui bottom attached segment">
+                        <p>Go to the <a href="/supplies">Supplies List Page</a>.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</article>
+    </article>
+</div>
+
 </body>
 </html>

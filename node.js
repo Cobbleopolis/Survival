@@ -7,6 +7,10 @@ app.get('/', function(req, res){
     pageCreate.indexHandle(__dirname + "/html/index.html", res);
 });
 
+app.get('/supplies', function(req, res){
+    pageCreate.indexHandle(__dirname + "/html/supplies.html", res);
+});
+
 //app.use(bodyParser.urlencoded({ extended: false }))
 //app.use(bodyParser.json());
 //
