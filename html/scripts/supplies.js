@@ -85,6 +85,7 @@ function createSupplies() {
     }
     html += '<div class="ui fitted inverted divider"></div>';
     html += '<p class="suppliesTotalPrice">Total Price: $' + Math.round(cost * 100) / 100 + '</p>';
+    html += '<br><p><b class="notice">All of these prices are before shipping and taxes.</b></p>';
 
     $("#suppliesContent").html(html);
 }
