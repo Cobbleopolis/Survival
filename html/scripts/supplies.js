@@ -81,10 +81,10 @@ function createSupplies() {
         html += '<p class="suppliesBuyView">Buy/View: <a href="' + supplies[i].link + '">' + supplies[i].linkName + '</a></p>';
         html += '</div>';
         cost += supplies[i].price;
-        //console.log(cost);
     }
     html += '<div class="ui fitted inverted divider"></div>';
-    html += '<p class="suppliesTotalPrice">Total Price: $' + Math.round(cost * 100) / 100 + '0</p>';
+    html += '<p class="suppliesTotalPrice">Total Price: $' + Math.round(cost * 100) / 100 + '</p>';
+    html += '<br><p><b class="notice">All of these prices are before shipping and taxes.</b></p>';
 
     $("#suppliesContent").html(html);
 }
